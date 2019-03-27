@@ -1,0 +1,102 @@
+import turtle
+t=turtle.Turtle()
+s=turtle.Screen()
+t.color("red")
+c = turtle.Screen()
+c.bgcolor("#ccc")
+
+#########
+tr1=40
+x=20
+y=34
+def trangle(tr,col):
+    t.color(col)
+    t.begin_fill()
+    t.forward(tr)
+    t.right(120)
+    t.forward(tr)
+    t.right(120)
+    t.forward(tr)
+    t.right(120)
+    t.end_fill()
+
+#########0
+t.color("red")
+t.begin_fill()
+t.forward(tr1*8)
+t.left(120)
+t.forward(tr1*8)
+t.left(120)
+t.forward(tr1*8)
+t.left(120)
+t.end_fill()
+#########
+#########1
+t.penup()
+t.goto(x,y)
+t.pendown()
+trangle(tr1,"#fff")
+#########2
+t.penup()
+t.goto(x*5,y)
+t.pendown()
+trangle(tr1,"#fff")
+#########3
+t.penup()
+t.goto(x*9,y)
+t.pendown()
+trangle(tr1,"#fff")
+#########4
+t.penup()
+t.goto(x*13,y)
+t.pendown()
+trangle(tr1,"#fff")
+#########5
+t.penup()
+t.goto(x*2,y*2)
+t.pendown()
+trangle(tr1*2,"#fff")
+#########6
+t.penup()
+t.goto(x*10,y*2)
+t.pendown()
+trangle(tr1*2,"#fff")
+#########7
+t.penup()
+t.goto(x*4,y*4)
+t.pendown()
+trangle(tr1*4,"#fff")
+#########8
+t.penup()
+t.goto(x*3,y*3)
+t.pendown()
+trangle(tr1,"#fff")
+#########9
+t.penup()
+t.goto(x*11,y*3)
+t.pendown()
+trangle(tr1,"#fff")
+#########10
+t.penup()
+t.goto(x*5,y*5)
+t.pendown()
+trangle(tr1,"#fff")
+#########11
+t.penup()
+t.goto(x*9,y*5)
+t.pendown()
+trangle(tr1,"#fff")
+#########11
+t.penup()
+t.goto(x*6,y*6)
+t.pendown()
+trangle(tr1*2,"#fff")
+#########11
+t.penup()
+t.goto(x*7,y*7)
+t.pendown()
+trangle(tr1,"#fff")
+
+
+#########
+turtle.done()
